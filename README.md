@@ -22,7 +22,7 @@ Target Audience include:
 
 
 ## live link
-  https://gauchoh.github.io/Sip-and-Paint-Chili/
+  https://gauchoh.github.io/Sip-and-paint/
 
 
 
@@ -43,8 +43,7 @@ Navmenu:
 
 ## How to Run Locally
 -To run this project locally,follow these steps:
-1. Clone the Repository:
-'https://github.com/Gauchoh/Chili-Project.git'
+1. Clone the Repository: https://gauchoh.github.io/Sip-and-paint/
 
 2. Open Index.html
 
