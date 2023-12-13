@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP AND PAINT</title>
+               <link rel="stylesheet" href="index.css">
+               <link rel="stylesheet" href="contact.html">
+</head>
+
+<body>
+
+  <style>
+
+    body {
+        background-image: url(Art.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, 'Franklin Gothic Medium', sans-serif;
+        font-size: medium;
+        font-weight: 1000;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgba(222, 184, 135, 0.306);
+        color: black;
+       }
+
+    header {
+        background-color:#33333353;
+        color: #fff;
+        text-align: center;
+        font-weight: bolder;
+        padding: 0em 0;
+    }
+
+    nav {
+      display: flex;
+      text-align: left;
+      list-style-type: none;
+      justify-content: flex-end;
+        background-color:none;
+        padding: 0.2em;
+        text-align: justify;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        padding: 1em;
+        margin: 0 1em;
+    }
+
+    .event-details {
+        text-align: center;
+        padding: 2em;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      height: 100px;
+    }   
+
+    section{
+    background-color:none;
+    display: flex;
+    justify-content: left;
+    padding: 10px
+
+    }
+ 
+    section a {
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase
+
+    /* <!-- Social media icons --> */
+ ul {
+  float: right;
+  text-align: right;
+  font-weight: bolder;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  }
+
+  /* footer section */
+nav{
+  display: flex;
+      text-align: left;
+      flex-direction: column;
+      list-style-type: circle;
+      justify-content: flex-end;
+        background-color:none;
+        padding: 0.2em;
+        text-align: justify
+    }
+
+  </style></body>
+</head>
+
+<body>
+
+<header>
+    <!-- Logo -->
+    <img src="Sip n Paint Logo.jpg" alt="Sip and Paint Logo" style="display: flex;" 20px;" height="150px">
+    <h1>SIP and PAINT</h1>
+    <i>Unleash your inner Artist with a Sip</i>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+  <a href="home.html">Home Page</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="sip rsvp.html">RSVP</a>
+</nav>
+
+
+<!-- Content of the website goes here -->
+<div style="padding: 20px;">
+  <h1><p align="center">Welcome to SIP and PAINT</p></h1>
+  <p>Welcome to Sip and Paint, where art and joy collide! We're a group of passionate artists and enthusiasts who believe that everyone has an inner artist just waiting to be unleashed.
+  Our events provide a unique and relaxed atmosphere for you to explore your creativity while sipping on your favorite beverage.
+   Whether you're a seasoned artist or a complete beginner, we've got you covered.
+   Join us for a fun-filled experience that will leave you with a masterpiece and memories to cherish. Let's paint, sip, and create together.
+   We aim to be the go-to destination for individuals seeking a fun and inclusive experiences at the same time as we trive to inspire and empower people to embrace their artistic side,
+   regardless of their skill level or background.  
+  </p>
+</div>
+</body>
+
+  <div class="countdown" id="countdown"></div>
+
+  <script>
+    // Set the date and time for the countdown
+    var countdownDate = new Date("December 22, 2023 14:59:59").getTime();
+
+    // Update the countdown every second
+    var countdown = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countdownDate - now;
+
+      // Calculate days, hours, minutes, and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown in the element with id="countdown"
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      // If the countdown is over, display a message
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("countdown").innerHTML = "Countdown is over!";
+      }
+    }, 1000);
+  </script>
+</body>
+</body>
+
+<body>
+    <div class="event-details"><strong>
+        <h2>2-Day Event</h2>
+        <p>Join us for an unforgettable 2-day extravaganza!</p>
+        <p>Featuring 15+ incredible guests.</p></strong>
+      </div>
+
+
+      <style>
+        /* Define the number of columns and their width */
+        .column-container {
+            display: flex;
+          column-count: 2; /* You can change this number based on your preference */
+          column-gap: 20px; /* Adjust the gap between columns */
+        }
+    
+        /* Style for the content inside the columns (optional) */
+        .column-content {
+          margin-bottom: 20px;
+        }
+      </style>
+    </head>
+    <body>
+
+
+      <section>
+        <p><strong><center><i>Unleash your inner Artist with a Sip:</i></center></strong></p>
+        <div>
+          <P align="justify">
+         <!-- Add Hire Me button -->
+         <a href="sip rsvp.html" class="button">REGISTER NOW</a><br><br>
+           </P>
+         </div>
+        </section>
+
+
+<!-- Social media icons -->
+<div>
+  <h2><P align="right">Find Us:</P></h2>
+<ul class="social-icons">
+  <li><a href="https://web.facebook.com/profile.php?id=100092489664798" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li><br>
+  <li><a href="https://www.instagram.com/nyamburajuliet/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+</ul>
+</div>
+
+
+<!-- Footer Section -->
+
+<!-- Navigation Bar -->
+<nav>
+  <a href="home.html">Home Page</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="sip rsvp.html">RSVP</a>
+</nav>
+
+<footer><!--  End footer  --><center>
+  <p><strong>&copy; 2023 Zindua Web Challenge. All rights reserved</strong></p></center>
+</footer>
+</body>
+</html>

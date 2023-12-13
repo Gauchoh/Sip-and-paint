@@ -1,0 +1,114 @@
+/* <style> */
+
+    body {
+        background-image: url(Assets/my\ paint.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, 'Franklin Gothic Medium', sans-serif;
+        font-size: medium;
+        font-weight: 1000;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgba(222, 184, 135, 0.306);
+        color: black;
+       }
+
+    header {
+        background-color:#33333353;
+        color: #fff;
+        text-align: center;
+        font-weight: bolder;
+        padding: 0em 0;
+    }
+
+    nav {
+      display: flex;
+      text-align: left;
+      list-style-type: none;
+      justify-content: flex-end;
+        background-color:none;
+        padding: 0.2em;
+        text-align: justify;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        padding: 1em;
+        margin: 0 1em;
+    }
+
+    .event-details {
+        text-align: center;
+        padding: 2em;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      height: 100px;
+    }
+   
+    ul {
+  float: right;
+  text-align: right;
+  font-weight: bolder;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  }
+
+nav{
+   display: block;
+      text-align: center;
+      list-style-type: none;
+      justify-content: center;
+        background-color:none;
+        padding: 0.2em;
+        text-align: justify;
+    }
+
+
+  /* </style></body>
+</head>
+
+<body> */
+
+
+
+
+/* <style> */
+@media screen and (max-width: 1200px){
+  header nav,
+  header .btn{
+    display: none;
+  } 
+}
+
+.btn-mobile{
+  display: inline-block;
+}
+
+.hero{
+  grid-template-columns: 100%;}
+
+# hero-illustration {
+  gap: 4rem;
+  order: -1;
+}
+
+header{
+  margin-bottom: 4rem;
+}
+
+
+
+
+
+

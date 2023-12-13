@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY - Sip and Paint</title>
+    <style>
+
+        body {
+            background-image: url(Art.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, 'Franklin Gothic Medium', sans-serif;
+            font-size: medium;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgba(222, 184, 135, 0.306);
+            color: black;
+           }
+
+        header {
+            background-color:#33333353;
+            color: #fff;
+            text-align: center;
+            font-weight: bolder;
+            padding: 0em 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.2em;
+            text-align: justify;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+        }
+
+        .event-details {
+            text-align: center;
+            padding: 2em;
+        }
+
+        .countdown {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          font-weight: bold;
+          text-align: center;
+          height: 100px;
+        }
+      </style></body>
+    </head>
+
+   <body>
+
+    <header>
+        <!-- Logo -->
+        <img src="Sip n Paint Logo.jpg" alt="Sip and Paint Logo" style="display: flex;" 20px;" height="150px">
+        <h1>SIP and PAINT</h1>
+    </header>
+<nav>
+    <a href="sip rsvp.html">RSVP</a>
+    <a href="contact.html">Contact</a>
+    <a href="home.html">Home Page</a>
+    <a href="images.html">Our Gallery</a>
+</nav>
+
+
+
+      <div class="countdown" id="countdown"></div>
+    
+      <script>
+        // Set the date and time for the countdown
+        var countdownDate = new Date("December 22, 2023 14:59:59").getTime();
+    
+        // Update the countdown every second
+        var countdown = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countdownDate - now;
+    
+          // Calculate days, hours, minutes, and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+          // Display the countdown in the element with id="countdown"
+          document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+          // If the countdown is over, display a message
+          if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "Countdown is over!";
+          }
+        }, 1000);
+      </script>
+    </body>
+    </body>
+
+    <body>
+
+        <div class="event-details"><strong>
+            <h2>2-Day Event</h2>
+            <p>Join us for an unforgettable 2-day extravaganza!</p>
+            <p>Featuring 15+ incredible guests.</p></strong>
+          </div>
+
+
+          <style>
+            /* Define the number of columns and their width */
+            .column-container {
+                display: flex;
+              column-count: 2; /* You can change this number based on your preference */
+              column-gap: 20px; /* Adjust the gap between columns */
+            }
+        
+            /* Style for the content inside the columns (optional) */
+            .column-content {
+              margin-bottom: 20px;
+            }
+          </style>
+        </head>
+        <body>
+        
+        
+        <div class="column-container">
+            <div class="Our Events">
+            <h2><strong>Our Events</strong></h2>
+            <p>Our events provide a unique and relaxed atmosphere for you to explore your creativity while sipping on your favorite beverage.
+                Whether you're a seasoned artist or a complete beginner, we've got you covered.
+                Join us for a fun-filled experience that will leave you with a masterpiece and memories to cherish. Let's paint, sip, and create together.
+            </p>
+        </div>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <div class="column-container">
+              <div class="About Sip and Paint">
+            <h2>About Sip and Paint</h2>                        
+            <p>Savor the flavor with a selection of fine wines, refreshing cocktails, and non-alcoholic beverages.
+                A variety of drinks will be available to complement your creative spirit.
+                Unleash your inner artist with guided painting sessions led by talented instructors.
+                Whether you're a seasoned painter or a first-timer, you're sure to create a masterpiece to take home and cherish.
+            </p>   
+        </div>
+</div>
+</div>
+</body>
+<!-- Footer Section -->
+
+<!-- Navigation Bar -->
+<nav>
+  <a href="home.html">Home Page</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="sip rsvp.html">RSVP</a>
+</nav>
+
+<footer><!--  End footer  --><center>
+  <p><strong>&copy; 2023 Zindua Web Challenge. All rights reserved</strong></p></center>
+</footer>
+</body>
+</html>
